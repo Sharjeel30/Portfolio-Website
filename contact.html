@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Me</title>
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="section">
+        <div class="title">
+            <h1>Contact Me</h1>
+        </div>
+        <div class="Projects">
+            <div class="card">
+                <a href="mailto:sharjeel.3119030.co@mhssce.ac.in" class="links">
+                <i class="fa-regular fa-envelope"></i> 
+                <!-- <h2>Portfolio Website</h2> -->
+                <!-- <img src="/images/gmailcolor-removebg-preview.png" class="gmlogo"> -->
+                </a>
+            </div>
+            <div class="card">
+                <a href="https://wa.me/9987252182" class="links">
+                <i class="fa-brands fa-whatsapp"></i>
+                <!-- <h2>Portfolio Website</h2> -->
+                <!-- <img src="/images/WACOLOR-removebg-preview.png" class="WAlogo"> -->
+                </a>
+            </div>
+            <div class="card">
+                <a href="https://www.linkedin.com/in/sharjilali133/" class="links">
+                <i class="fa-brands fa-linkedin"></i>
+                <!-- <h2>Portfolio Website</h2> -->
+                <!-- <img src="/images/linkedincolor-removebg-preview.png" class="lnlogo"> -->
+                </a>
+            </div>
+        </div>
+        
+        <div class="container">
+            <form onsubmit="sendEmail(); reset(); return false;">
+                <h2>GET IN TOUCH</h2>
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Your Email-id" required>
+                <input type="text" id="phone" placeholder="Your Contact No." required>
+                <textarea id="message" rows="4" placeholder="Type your message here..."></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+        <script src=" https://smtpjs.com/v3/smtp.js"></script>
+        <script src="contactform.js"></script>
+        <br>
+        <div>
+            <a href="index.html" class="link1">
+                <i class="fa-solid fa-house"></i>
+            </a>
+        </div>
+    </div>
+</body>
+
+</html>
