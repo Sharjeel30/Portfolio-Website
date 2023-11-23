@@ -1,0 +1,133 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.hero{
+    position: relative;
+    width: 100%;
+    height:100vh;
+    background: #080808;
+}
+
+nav{
+    display: flex;
+    width: 84%;
+    margin: auto;
+    padding: 10px 0;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color:rgb(255, 255, 255);
+    font-weight: bold;
+}
+
+nav ul li a::after{
+    content: "";
+    width: 0;
+    height: 3px;
+    background-color: orange;
+    margin: auto;
+    display: block;
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+    transition: width 0.3s linear;
+
+}
+
+nav ul li a{
+    color: rgb(255, 255, 255);
+}
+
+/* nav ul li a:hover::{
+    text-decoration: underline;
+} */
+
+.detail{
+    margin-left: 8%;
+    margin-top: 10%;
+}
+
+.detail h1{
+    font-size: 50px;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+span{
+    color: orange;
+
+}
+
+.detail p{
+    color: #ffffff;
+    line-height: 22px;
+    
+}
+
+.detail a{
+    background-color: rgb(255, 166, 0);
+    padding: 10px 18px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #000000;
+    display: inline-block;
+    margin: 30px 0px;
+    border-radius: 5px;
+}
+
+.detail a:hover{
+    background-color: rgb(255, 255, 255);
+}
+
+.images{
+    width: 30%;
+    height: 50%;
+    position: absolute;
+    bottom: 0;
+    right: 100px;
+}
+
+.images img{
+    height: 100%;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    transition: bottom 1s, left 1s;
+    margin-bottom: 25%;
+}
+
+
+.images:hover .shape{
+    bottom: 20px;
+   
+}
+
+.images:hover .boy{
+    left: 45%;
+}
+
+@media screen and (max-width: 940px){
+    .Projects{
+        display: flex;
+        flex-direction: column;
+    }
+    .card{
+        width: 85%;
+        display: flex;
+        margin: 20px 0px ;
+    }
+}
