@@ -1,0 +1,219 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins';
+    color: rgb(255, 255, 255);
+}
+
+body{
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+}
+
+.title h1{
+    text-align: center;
+    padding-top: 50px;
+    font-size: 42px;
+    color: rgb(255, 136, 0);
+    text-shadow: 2px 5px 2px rgba(255, 255, 255, 0.313);
+}
+
+/* .title h1::after{
+    content: "";
+    height: 4px;
+    width: 150px;
+    background-color: white;
+    display: block;
+    margin: auto;
+} */
+
+.Projects{
+    width: 60%;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 75px auto;
+    text-align: center;
+    /* padding: 5px 0px 20px 0px; */
+
+}
+
+.card{
+    width: 100%; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    margin: 0px 20px;
+    padding: 20px 20px ;
+    /* background-color: rgba(255, 255, 255, 0.078); */
+    
+    background-color: rgba(255, 255, 255, 0.091);
+    border-radius: 150px;
+    transition: 0.5s;
+    
+    
+}
+
+.card:hover{
+   
+    background-color: rgba(255, 255, 255, 0.167);
+    transform: scale(1.2);
+   
+    z-index: 2;
+}
+
+.card h2{
+    color: rgb(255, 136, 0);
+    font-weight: 300;
+    font-family: "poppins";
+    margin-bottom: 10px;
+    font-size: 20px;
+    
+}
+
+.card p{
+    font-size: 13px;
+    margin-bottom: 30px;
+    line-height: 1.5;
+    color: rgb(255, 255, 255);
+}
+
+ .card p:hover{
+    color: orange;
+} 
+
+.links {
+    font-size: 12px;
+    font-weight: light;
+    padding-top: 20px;
+}
+
+.links:hover{
+    color: orange;
+}
+
+.link1{
+    
+    padding-left: 45%;
+}
+
+.link1:hover{
+    color: rgb(255, 166, 0);
+}
+
+.ulink{
+    margin: auto;
+    padding:auto ;
+}
+
+.lnlogo{
+    height: 110px;
+    width: 120px;
+}
+
+.WAlogo{
+    height: 100px;
+    width: 100px;
+}
+
+.gmlogo{
+    height: 110px;
+    width: 130px;
+}
+
+.fa-envelope{
+    font-size: 80px;
+    color: rgb(247, 4, 4);
+    padding-bottom: 30px;
+}
+
+.fa-github{
+    font-size: 80px;
+    color: rgb(242, 248, 255);
+    padding-bottom: 30px;
+}
+
+.fa-linkedin{
+    font-size: 80px;
+    color: rgb(8, 23, 240);
+    padding-bottom: 30px;
+}
+
+.fa-house{
+    text-align: center;
+    color: rgb(255, 136, 0);
+    font-size: 30px;
+    margin-left: 40px;
+    padding-bottom: 20px;
+}
+
+.fa-house:hover{
+    color: rgba(245, 131, 1, 0.557);
+}
+
+.container{
+    width: 100%;
+    height: 80vh;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    background: rgba(0, 0, 0, 0.244);
+}
+
+form{
+    background: rgba(255, 255, 255, 0.091);
+    display: flex;
+    flex-direction: column;
+    padding: 2vw 4vw;
+    width: 90%;
+    max-width:  600px; 
+    border-radius: 10px;
+}
+
+form h2{
+    color: rgb(255, 136, 0);
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+form input, form textarea{
+    border: 0;
+    margin: 10px 0px;
+    padding: 10px;
+    outline: none;
+    background: rgb(0, 0, 0);
+    font-size: 15px;
+}
+
+form button{
+    padding: 10px;
+    background: rgb(255, 136, 0);
+    color: white;
+    font-size: 18px;
+    border: 0;
+    outline: none;
+    width: 150px;
+    margin: 20px auto 0;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+form button:hover{
+    background:rgba(255, 136, 0, 0.37) ;
+    
+}
+
+
+@media screen and (max-width: 940px){
+    .Projects{
+        display: flex;
+        flex-direction: column;
+    }
+    .card{
+        width: 85%;
+        display: flex;
+        margin: 20px 0px ;
+    }
+}
