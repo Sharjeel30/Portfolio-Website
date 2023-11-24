@@ -11,6 +11,11 @@
     background: #080808;
 }
 
+.logo{
+    height: 100px;
+    width: 100px;
+}
+
 nav{
     display: flex;
     width: 84%;
