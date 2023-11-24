@@ -113,10 +113,6 @@ body{
     width: 120px;
 }
 
-.WAlogo{
-    height: 100px;
-    width: 100px;
-}
 
 .gmlogo{
     height: 110px;
@@ -130,7 +126,7 @@ body{
 }
 
 .fa-github{
-    font-size: 80px;
+    font-size: 100px;
     color: rgb(242, 248, 255);
     padding-bottom: 30px;
 }
